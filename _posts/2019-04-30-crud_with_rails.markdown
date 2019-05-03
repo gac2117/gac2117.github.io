@@ -1,19 +1,19 @@
 ---
 layout: post
 title:      "CRUD with Rails"
-date:       2019-04-30 14:14:19 +0000
+date:       2019-04-30 10:14:20 -0400
 permalink:  crud_with_rails
 ---
 
 How to start from scratch using "Post" as an example (or can use `rails g resource Post ...` generator).
 
-#### In `app/models`, create a new model file named `post.rb`
+## In `app/models`, create a new model file named `post.rb`
 ```
 class Post < ActiveRecord::Base
 end
 ```
 
-#### In `db/migrate`, create a new migration file named `01_create_posts.rb`
+## In `db/migrate`, create a new migration file named `01_create_posts.rb`
 ```
 class CreatePosts < ActiveRecord::Migration
   def change
@@ -28,14 +28,14 @@ end
 
 Run `rake db:migrate` to create the database.
 
-#### In `config/routes.rb`, draw the necessary routes.
+## In `config/routes.rb`, draw the necessary routes.
 ```
 resources :posts
 ```
 
 If you want to use only a few routes, you can add what you need, like `only: [:index, :show, :new, :create, :edit, :update]` 
 
-#### In `app/controllers`, create a new controller that inherits from the Application Controller and add all of the necessary actions.
+## In `app/controllers`, create a new controller that inherits from the Application Controller and add all of the necessary actions.
 ```
 class PostController < ApplicationController
   def index
@@ -85,8 +85,8 @@ private
 end
 ```
 
-#### In `views/posts` create the necessary view files
-**In the index.html.erb**
+## In `views/posts` create the necessary view files
+### **In the index.html.erb**
 To view a list of posts, with links to each post's show page and the option to delete:
 ```
 <% @posts.each do |post| %>
@@ -97,7 +97,7 @@ To view a list of posts, with links to each post's show page and the option to d
 <% end %>
 ```
 
-**In the show.html.erb**
+### **In the show.html.erb**
 When viewing a single post with a link to its associated object (like category):
 ```
 <h1><%= @post.title %></h1>
@@ -116,7 +116,7 @@ When viewing a list of posts for one category (similar to the index.html.erb for
 </ul>
 ```
 
-**In the new.html.erb** using `form_tag` (used when it isn't connected to models, like search engines)
+### **In the new.html.erb** using `form_tag` (used when it isn't connected to models, like search engines)
 ```
 <h3>Create Form</h3>
 <%= form_tag posts_path do %>
@@ -130,7 +130,7 @@ When viewing a list of posts for one category (similar to the index.html.erb for
 <% end %>
 ```
 
-**In the edit.html.erb** using `form_for`
+### **In the edit.html.erb** using `form_for`
 ```
 <h3>Post Form</h3>
 <%= form_for @post do |f| %>
