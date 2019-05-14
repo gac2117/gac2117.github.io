@@ -37,7 +37,7 @@ If you want to use only a few routes, you can add what you need, like `only: [:i
 
 ### In `app/controllers`, create a new controller that inherits from the Application Controller and add all of the necessary actions.
 ```
-class PostController < ApplicationController
+class PostsController < ApplicationController
   def index
 	  @posts = Post.all
 	end
