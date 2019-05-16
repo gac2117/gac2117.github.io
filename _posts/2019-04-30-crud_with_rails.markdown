@@ -35,7 +35,7 @@ resources :posts
 
 If you want to use only a few routes, you can add what you need, like `only: [:index, :show, :new, :create, :edit, :update]` 
 
-### In `app/controllers`, create a new controller that inherits from the Application Controller and add all of the necessary actions.
+### In `app/controllers/posts_controller.rb`, create a new controller that inherits from the Application Controller and add all of the necessary actions.
 ```
 class PostsController < ApplicationController
   def index
