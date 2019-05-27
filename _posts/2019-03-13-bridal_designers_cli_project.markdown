@@ -1,7 +1,7 @@
 ---
 layout: post
-title:      "Bridal Designers CLI Project"
-date:       2019-03-13 22:31:42 +0000
+title:      "CLI Portfolio Project"
+date:       2019-03-13 18:31:43 -0400
 permalink:  bridal_designers_cli_project
 ---
 
