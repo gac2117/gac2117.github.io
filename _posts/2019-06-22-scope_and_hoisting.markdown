@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Scope and Hoisting"
-date:       2019-06-22 23:11:16 +0000
+date:       2019-06-22 19:11:16 -0400
 permalink:  scope_and_hoisting
 ---
 
@@ -101,7 +101,7 @@ It is clearer in this second example what was wrong. We declared a variable but 
 However, ever since ES6, we now declare variables using `let` and `const`. These variables are NOT hoisted by JS. Therefore, it is a good practice to always declare all variables at the beginning of every scope yourself instead of letting JS hoist them (or NOT hoist them) automatically.
 
 #### Block Scope:
-Now, back to scopes, ES6 introduced a new scope called **Block Scope**. This means variables that are declared inside a ** block {}** cannot be accessed outside of the block. 
+Now, back to scopes, ES6 introduced a new scope called **Block Scope**. This means variables that are declared inside a **block {}** cannot be accessed outside of the block. 
 
 Variables that are declared with the `var` keyword cannot have Block Scope. Therefore `var` variables that are declared inside a block can still be accessed and redeclared outside of the block! 
 
