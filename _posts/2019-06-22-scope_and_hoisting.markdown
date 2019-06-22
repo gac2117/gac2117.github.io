@@ -10,11 +10,11 @@ When learning JavaScript for the first time, it is important to learn the older 
 
 With that in mind, I will introduce the basic concepts of **scope** and **hoisting**.
 
-### JavaScript Scopes:
+## JavaScript Scopes:
 
 Before ES6, JS only had two types of scope: **Local Scope** and **Global Scope**
 
-#### Local Scope:
+### Local Scope:
 When you create a function, variables that are declared inside the function become local to the function. Therefore these variables can only be accessed from within the function.
 
 ```
@@ -28,7 +28,7 @@ function myTrip() {
 
 These local variables are created when a function starts, and deleted when the function ends. 
 
-#### Global Scope:
+### Global Scope:
 Variables that are declared outside a function has global scope. This means they can be used in any function or script on the page.
 
 ```
@@ -100,7 +100,7 @@ It is clearer in this second example what was wrong. We declared a variable but 
 
 However, ever since ES6, we now declare variables using `let` and `const`. These variables are NOT hoisted by JS. Therefore, it is a good practice to always declare all variables at the beginning of every scope yourself instead of letting JS hoist them (or NOT hoist them) automatically.
 
-#### Block Scope:
+### Block Scope:
 Now, back to scopes, ES6 introduced a new scope called **Block Scope**. This means variables that are declared inside a **block {}** cannot be accessed outside of the block. 
 
 Variables that are declared with the `var` keyword cannot have Block Scope. Therefore `var` variables that are declared inside a block can still be accessed and redeclared outside of the block! 
@@ -123,9 +123,10 @@ for (let i = 0; i < 10; i++) {
    // some statements
 }
 // Here i is still 5 because the variable declared in the loop did not redeclare the original variable i outside of the loop. 
+
 ```
 
-##### A little more about the variable keywords and redeclaring variables:
+#### A little more about the variable keywords and redeclaring variables:
 
 Redeclaring `var` variables is allowed anywhere in a program. This can become a mess quickly!
 ```
