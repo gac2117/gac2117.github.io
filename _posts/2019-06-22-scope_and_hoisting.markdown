@@ -156,7 +156,7 @@ let x = 2
 
 The same goes for redeclaring `let` variables with `let`, as well as redeclaring `let` variables with `var`. If you are in the same scope, you cannot redeclare it. 
 
-However, you can redeclare `let` variables in different scopes
+However, you can declare `let` variables with the same name in different scopes:
 ```
 let x = 1
 // x is 1
