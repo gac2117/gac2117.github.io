@@ -5,7 +5,7 @@ header-img: img/home-bg.png
 email: oiograceoio@gmail.com
 copyright_name: Grace Choi
 description: > # this means to ignore newlines until "baseurl:"
-  See Grace code
+  see Grace code 
 baseurl: "" # the subpath of your site, e.g. /blog
 twitter_username: 
 github_username:  gac2117
