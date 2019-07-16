@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Notes on how to use Git"
-date:       2019-04-16 19:21:27 +0000
+date:       2019-04-16 15:21:28 -0400
 permalink:  notes_on_how_to_use_git
 ---
 
@@ -10,14 +10,13 @@ permalink:  notes_on_how_to_use_git
 * Then move into the directory by typing `cd my-project` in the terminal
 * Initialize the directory by typing `git init`. Only type `git init` within the directory you want `git` to track
 
-
-* Check the status of the repository by typing `git status` to see what changes have been made
 * Create a README file by typing `touch README.md` within the directory
 * Get a list of all the files in the directory by typing `ls`
 
-
+* Check the status of the repository by typing `git status` to see what changes have been made
 * Add files to the `git` repository by typing `git add <filename>` or add all the files by typing `git add .`
 * Commit the changes by typing `git commit -m 'message about the commit'`. Make sure the commit message is informative and specific.
+* Push the local commited work to the repo by typing `git push`
 
 
 * Make a local copy of a repo from Github by typing `git clone <URL>`. Get the URL by going to the repository on Github and clicking the "Clone or download" green button. Use SSH as the URL type. 
