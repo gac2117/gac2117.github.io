@@ -1,6 +1,6 @@
 ---
 layout: post
-title:      "Golang - Functions"
+title:      "Golang Functions"
 date:       2020-02-14 14:26:18 -0500
 permalink:  golang_-_functions
 ---
