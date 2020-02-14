@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Golang - Functions"
-date:       2020-02-14 19:26:17 +0000
+date:       2020-02-14 14:26:18 -0500
 permalink:  golang_-_functions
 ---
 
