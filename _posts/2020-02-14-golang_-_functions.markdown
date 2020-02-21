@@ -122,3 +122,23 @@ func main() {
 ```
 
 Now when we execute the code, the output should be 9.
+
+### **Here is the final code for all of the examples in this post**
+```
+package main
+
+import "fmt"
+
+func birthday(name string) string {
+	return "Happy birthday " + name
+}
+
+func addThis(num1, num2 int) int {
+	return num1 + num2
+}
+
+func main() {
+	fmt.Println(birthday("John"))
+	fmt.Println(addThis(3, 6))
+}
+```
