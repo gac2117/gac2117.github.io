@@ -1,7 +1,7 @@
 ---
 layout: post
 title:      "Golang Conditionals"
-date:       2020-02-21 19:09:29 +0000
+date:       2020-02-21 14:09:30 -0500
 permalink:  golang_conditionals
 ---
 
@@ -258,12 +258,17 @@ import "fmt"
 func main() {
 	x := 5
 
+ // if-else statement
+ 
 	if x == 5 {
 		fmt.Println("x is equal to 5")
 	} else {
 		fmt.Println("x is not equal to 5")
 	}
-
+	
+	
+ // else-if statement
+ 
 	if x > 10 {
 		fmt.Println("x is greater than 10")
 	} else if x < 10 {
@@ -272,6 +277,8 @@ func main() {
 		fmt.Println("x is equal to 10")
 	}
 
+ // switch statement
+ 
 	month := 5
 
 	switch month {
